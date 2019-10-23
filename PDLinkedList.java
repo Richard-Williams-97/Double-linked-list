@@ -9,9 +9,9 @@
  *The head of the list is the first and the tail is the last Node. Current node is set after
  *certain methods. if the methods changes the current node it will be mentioned
  */
-public class PDLinkedList 
+public class PDLinkedList //Informational cohesion
 {
-	private Node head;
+	private Node head; //possibly temporal cohesion
 	private Node tail;
 	private Node current;
 	private int size;
@@ -60,7 +60,7 @@ private static class Node
 	 * @return T/F depending on size
 	 * if size is zero isEmpty will be true 
 	 */
-	public boolean isEmpty()
+	public boolean isEmpty() //Functional cohesion
 	{
 		return size==0;
 	}
@@ -81,7 +81,7 @@ private static class Node
 	 * @return boolean stat, true if list contains item. false otherwise
 	 * 
 	 */
-	public boolean contains(int item)
+	public boolean contains(int item) //communication cohesion ...or possibly procedural
 	{
 		if(size==0)
 		{
